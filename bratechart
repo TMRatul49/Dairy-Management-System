@@ -1,0 +1,66 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 20, 2022 at 07:03 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `dairy`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bratechart`
+--
+
+CREATE TABLE `bratechart` (
+  `bfat` double NOT NULL,
+  `brate` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `bratechart`
+--
+
+INSERT INTO `bratechart` (`bfat`, `brate`) VALUES
+(6.1, 30),
+(6.2, 35),
+(6.3, 40),
+(6.4, 45),
+(6.5, 50),
+(6.6, 55),
+(6.7, 60),
+(6.8, 65),
+(6.9, 75),
+(7, 1000),
+(7.1, 80),
+(7.2, 90);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `bratechart`
+--
+ALTER TABLE `bratechart`
+  ADD PRIMARY KEY (`bfat`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
